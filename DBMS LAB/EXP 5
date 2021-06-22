@@ -1,0 +1,29 @@
+
+create database bus_reservation_system;
+USE bus_reservation_system;
+
+CREATE TABLE Bus (BusNo varchar (10) primary key, Source varchar(15), Destination varchar (15));
+insert into Bus values('TS01', 'Hyderabad', 'Vijayawada');
+insert into Bus values('TS02', 'Delhi', 'Vijayawada');
+insert into Bus values('TS03', 'Vijayawada', 'vizag');
+insert into Bus values('TS04', 'Hyderabad', 'Rajahmundry');
+Select * from Bus;
+
+CREATE TABLE Passenger(PNo int(9) primary key,PName varchar (15),PAge int ,PSex Char(10), p_seatnum int);
+insert into Passenger values('1201', 'Aruna', '35', 'Female','1');
+insert into Passenger values('1202', 'Ben', '20', 'Male','2');
+insert into Passenger values('1203', 'Chandini', '14', 'Female','3');
+insert into Passenger values('1204', 'Dev', '65', 'Male','4');
+select * from Passenger
+
+CREATE TABLE Ticket(Ticket_No int Primary Key,Journey_date Date,
+Age int,Sex varchar(10),Source Varchar(10),Arrival_time varchar(6),
+Destination Varchar(10), Dep_time varchar(6));
+insert int Ticket values('01', '12-05-2021', '')
+
+
+CREATE TABLE Reservation(PNo int, foreign key(PNo) references passenger(PNo),Journey_date date, No_of_seats int,
+Address Varchar(40),Contact_No int,Status Char(2));
+CREATE TABLE Cancellation(PNo int, foreign key(PNo) references passenger(PNo),Journey_date date,No_of_seats int, 
+Address Varchar(40),Contact_No int,Status char(2));
+show tables;
