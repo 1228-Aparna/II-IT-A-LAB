@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="login.css">
+      <link href = "login.css" rel = "stylesheet" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   </head>
+   <body>
+      <style>
+         .header{
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    background: #1072f1;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+.btn{
+    background: #1072f1;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+      </style>
+    <nav>
+            
+        <ul class = "nav-links">
+            <li><a href="WP_travelling.html" style="color: black; font-size: 125%; ">HOME</a></li>
+            <li><a href="About.html" style="color: black; font-size: 125%;">ABOUT</a></li>
+            <li><a href="login.html" style="color: black; font-size: 125%;">LOGIN</a></li>
+            <li><a href="contact.html" style="color: black; font-size: 125%;">CONTACT US</a></li>
+            <li class = "btn"> <a href = "registration.html" style="color: black;">Sign Up</a></li>
+        </ul>
+    </nav>
+      <div class="wrapper">
+         <div class="title">
+            REGISTRATION
+         </div>
+         <form action="#">
+            <div class="field">
+               <input type="text" required>
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" required>
+               <label>Password</label>
+            </div>
+            <div class="field">
+                <input type="password" required>
+                <label>Confirm Password</label>
+             </div>
+            
+            <div class="field">
+               <input type="submit" value="Register">
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

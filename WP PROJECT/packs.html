@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Packages</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+  <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+
+</head>
+<body>
+  <style>
+    .header{
+        height: 100vh;
+        width: 100%;
+        padding: 0 8%;
+        position: relative;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .nav-links{
+        padding: 28px 0;
+    }
+    .nav-links li{
+        display: inline-block;
+        margin: 0 15px;
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 0;
+        position: relative;
+    }
+    .nav-links li a::after{
+        content: '';
+        background: #1072f1;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: width 0.5s;
+    }
+    .nav-links li a:hover::after{
+        width: 100%;
+    }
+    .btn{
+        background: #1072f1;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+          </style>
+          <nav style="background-color: white; place-content: right;">
+                <ul class = "nav-links">
+                    <li><a href="" style="color: black;font-size: 125%;">HOME</a></li>
+                    <li><a href="About.html" style="color: black; font-size: 125%;">ABOUT</a></li>
+                    <li><a href="login.html" style="color: black; font-size: 125%;">LOGIN</a></li>
+                    <li><a href="" style="color: black; font-size: 125%;">CONTACT US</a></li>
+                    <li class = "btn"> <a href = "registration.html">Sign Up</a></li>
+                </ul>
+            </nav>
+
+<div class="rev-section">
+
+<h2 class="title" style="color: black;">Your Travelling Page!</h2>
+<p class="note">Every journey is destined !</p>
+
+<div class="reviews">
+
+<div class="review">
+   <div class="head-review">
+      <img src="hyd.jpg" width="200px">
+   </div>
+   <div class="body-review">
+      <div class="name-review">HYDERABAD</div>
+      <div class="place-review">check packages</div>
+
+      <div class="desc-review">Check out our different packages of HYDERABAD</div>
+   </div>
+</div>
+<div class="review">
+   <div class="head-review">
+      <img src="bng.jpg" width="250px">
+   </div>
+   <div class="body-review">
+      <div class="name-review">BANGALORE</div>
+      <div class="place-review">Check packages</div>
+
+      <div class="desc-review">Check out our different packages of BANGALORE</div>
+   </div>
+</div>
+<div class="review">
+   <div class="head-review">
+      <img src="goa.jpg" width="250px">
+   </div>
+   <div class="body-review">
+      <div class="name-review">GOA</div>
+      <div class="place-review">check packages</div>
+      <div class="desc-review">check out our different packages of GOA</div>
+   </div>
+</div>
+
+      
+</div>
+</div>
+</div>
+<style>
+    body{
+        background-image: url("packs.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    display: flex;
+    height: 100vh;
+  }
+  
+  .rev-section{
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
+  }
+  
+  .title{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:beige;
+    margin-bottom: .5rem;
+  }
+  .note{
+    font-size: 1.3rem;
+    color: rgb(150, 150, 150);
+    font-family: "Times New Roman", Times, serif;
+    color:rgb(240, 176, 81);;
+    font-family: Tahoma, Verdana, sans-serif;
+  }
+  .reviews{
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .review{
+    margin: 0 1rem;
+    min-width: 300px;
+    flex: 1;
+  }
+  
+  .head-review{
+    margin: 1.75rem auto;
+    width: 150px;
+    height: 150px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+  }
+  
+  .body-review{
+    background-color: rgb(238, 238, 238);
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+    min-height: 345px;
+  }
+  .name-review{
+    font-size: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin-bottom: .25rem;
+  }
+  .place-review{
+    color: red;
+    font-style: italic;
+  }
+  .rating{
+    color: rgb(253, 180, 42);
+    margin: 1rem 0;
+  }
+  .desc-review{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+  }
+  @media (max-width: 678px){
+    .review{
+      margin-top: 1.5rem;
+    } 
+   }
+   .body-review:hover{
+      transform: translateY(-10px);
+      transition: all ease 0.1s;
+   }
+</style>
+</body>
+</html>
